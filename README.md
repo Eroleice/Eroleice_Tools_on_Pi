@@ -13,7 +13,7 @@ Here's some simple script I create with PHP or NodeJs. There're only two reasons
 
 ## Author
 
-**[@Eroleice](https://coding.net/u/Eroleice)**: Also nickname as 夜樱. 
+**[@Eroleice](https://github.com/Eroleice)**: Also nickname as 夜樱. 
 
 ## My Licience
 
