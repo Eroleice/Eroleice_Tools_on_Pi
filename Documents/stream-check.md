@@ -27,7 +27,8 @@ The programm will create json files for each streamer contained by `list` obj, u
 If the streamer is offline, the content would be:
 
     {
-        "onAir":0
+        "onAir":0,
+        "url":"http://stream.url.here"
     }
 
 If the streamer is on air, the content would be:
@@ -36,7 +37,8 @@ If the streamer is on air, the content would be:
         "onAir":1,
         "title":"Here's the title",
         "game":"Here's the game",
-        "begin":0000000000 /* the begin time of streaming, in timestamp */
+        "begin":0000000000, /* the begin time of streaming, in timestamp */
+        "url":"http://stream.url.here"
     }
 
 I've set `cron` run this script for ever 5 minutes.
