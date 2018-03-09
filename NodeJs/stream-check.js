@@ -31,7 +31,7 @@ for (var name in streamer_list){
 function getData(_name,_plat,_room,callback){
 	
 	var ret = [];
-    var randomIp = Math.floor(Math.random()*255) + '.' + Math.floor(Math.random()*255) + '.' + Math.floor(Math.random()*255);
+	var randomIp = Math.floor(Math.random()*255) + '.' + Math.floor(Math.random()*255) + '.' + Math.floor(Math.random()*255);
 	
 	/* 获取直播间api地址 */
 	if (_plat=="huya"){
