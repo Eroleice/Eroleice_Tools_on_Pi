@@ -69,12 +69,12 @@ function getData(_name,_plat,_room,callback){
 							"title":data["Broadcast"]["Title"],
 							"game":data["Broadcast"]['GameName'],
 							"begin":Math.Floor(parseInt(data["Broadcast"]["BeginTime"])/1000),
-							"url":list[_name]
+							"url":streamer_list[_name]["url"]
 						};
 					} else {
 						ret = {
 							"onAir":0,
-							"url":list[_name]
+							"url":streamer_list[_name]["url"]
 						}
 					}
 				} else if (_plat=="bilibili"){
@@ -87,12 +87,12 @@ function getData(_name,_plat,_room,callback){
 							"title":data["data"]["title"],
 							"game":data["data"]['area_name'],
 							"begin":bt_s,
-							"url":list[_name]
+							"url":streamer_list[_name]["url"]
 						};
 					} else {
 						ret = {
 							"onAir":0,
-							"url":list[_name]
+							"url":streamer_list[_name]["url"]
 						}
 					}
 
