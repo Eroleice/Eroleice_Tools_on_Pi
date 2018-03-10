@@ -3,7 +3,7 @@ const fs=require('fs');
 
 const streamer_list = {
 	"夏小木":{
-		"plat":"huya",
+		"plat":"longzhu",
 		"api":"http://roomapicdn.plu.cn/room/roomstatus?roomid=2290816&lzv=1",
 		"id":2290816,
 		"url":"http://star.longzhu.com/2584782"
@@ -34,8 +34,8 @@ function getData(_name,_plat,_room,callback){
 	var randomIp = Math.floor(Math.random()*255) + '.' + Math.floor(Math.random()*255) + '.' + Math.floor(Math.random()*255);
 	
 	/* 获取直播间api地址 */
-	if (_plat=="huya"){
-		/* 虎牙 */
+	if (_plat=="longzhu"){
+		/* 龙珠 */
 		var referer = "http://roomapicdn.plu.cn/room/roomstatus?roomid="+_room+"&lzv=1";
 	} else if (_plat=="bilibili"){
 		/* bilibili */
@@ -62,7 +62,7 @@ function getData(_name,_plat,_room,callback){
 				var data = JSON.parse(body);
 				
 				if (_plat=="huya"){
-					/* 解读虎牙直播间数据 */
+					/* 解读龙珠直播间数据 */
 					if (typeof data["Broadcast"]!=="undefined"){
 						ret = {
 							"onAir":1,
