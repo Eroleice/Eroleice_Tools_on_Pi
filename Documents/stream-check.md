@@ -13,7 +13,7 @@ Check my friends' stream and store info into json file for other api using.
 
 ## Current Compatibility
 
-* 虎牙直播
+* 龙珠直播
 * 哔哩哔哩直播
 
 ## How does if work?
